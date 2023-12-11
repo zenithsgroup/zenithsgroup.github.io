@@ -1,0 +1,164 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+img.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.links h4 {
+    font-size: 18px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 170px;
+    width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(17px);
+    -webkit-backdrop-filter: blur(17px);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    transition: width 0.3s ease;
+    float: left;
+    width: 120px;
+    min-height: 100vh;
+}
+
+.sidebar:hover {
+    width: 175px;
+}
+
+.content {
+    flex-grow: 1;
+    margin-left: 120px;
+    transition: margin-left 0.3s ease;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.sidebar:hover+.content {
+    margin-left: 190px;
+    /* Sesuaikan lebar sidebar yang membesar */
+}
+
+.container {
+    display: flex;
+    flex-grow: 1;
+    /* Tambahkan flex-grow untuk memastikan flex container mengisi tinggi penuh */
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.sidebar .logo {
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding: 25px 10px 15px;
+}
+
+.links svg {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 26px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    right: 24px;
+}
+
+.logo img {
+    border-radius: 50%;
+    width: 43px;
+}
+
+.Logo h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-left: 15px;
+    display: none;
+}
+
+.sidebar:hover .logo h2 {
+    display: block;
+}
+
+.sidebar .links {
+    list-style: none;
+    margin-top: 20px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    height: calc(100% - 140px);
+    /* Ubah calc(100% 140px) menjadi calc(100% - 140px) */
+}
+
+.sidebar .links::-webkit-scrollbar {
+    display: none;
+}
+
+.links li {
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.links li:hover {
+    cursor: pointer;
+    background: #fff;
+}
+
+.Links h4 {
+    color: #222;
+    font-weight: 500;
+    display: none;
+    margin-bottom: 10px;
+}
+
+.sidebar:hover .links h4 {
+    display: block;
+}
+
+.Links hr {
+    margin: 10px 8px;
+    border: 1px solid #4c4c4c;
+}
+
+.sidebar:hover .links hr {
+    border-color: transparent;
+}
+
+.links li span {
+    padding: 12px 10px;
+}
+
+.links li a {
+    padding: 10px;
+    color: #000;
+    display: none;
+    font-weight: 500;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.sidebar:hover .links li a {
+    display: block;
+
+}
+
+.sidebar:hover .links hr {
+    border-color: transparent;
+}
+
+.links .logout-link {
+    margin-top: 20px;
+}

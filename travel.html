@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet'
+        href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap'>
+    <link rel="stylesheet" href="css/travel.css">
+    <link rel="icon" href="fig/icon.png" type="image/png">
+    <title>Mager.id - Travels</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="mager_id.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            For You
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="lifestyle.html">Lifestyle</a></li>
+                            <li><a class="dropdown-item" href="travel.html">Travels</a></li>
+                            <li><a class="dropdown-item" href="event.html">Events</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="fig/opening-travel1.jpg" class="d-block w-100" alt="Header 1">
+            </div>
+            <div class="carousel-item">
+                <img src="fig/opening-travel2.jpg" class="d-block w-100" alt="Header 2">
+            </div>
+            <div class="carousel-item">
+                <img src="fig/opening-travel3.jpg" class="d-block w-100" alt="Header 3">
+            </div>
+            <div class="carousel-item">
+                <img src="fig/opening-travel4.jpg" class="d-block w-100" alt="Header 3">
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-caption text-center">
+        <h3>HALO, SOBAT MAGER!</h3>
+        <p>Di sini, kami membuka lembaran baru petualangan. Setiap langkah adalah kisah baru, dan setiap destinasi
+            adalah lukisan yang menanti untuk dijelajahi.</p>
+    </div>
+
+    <div class="container text-center">
+        <h2 class="running-text">Jelajahi Destinasi Menakjubkan Bersama Kami</h2>
+    </div>
+
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-1">
+                <!-- Card 1 -->
+                <div class="col mb-4" id="yourDivId1">
+                    <a href="https://anekatempatwisata.com/10-tempat-wisata-di-aceh-yang-wajib-dikunjungi/"
+                        target="_blank">
+                        <div class="container">
+                            <div class="front" style="background-image: url(fig/Nanggroe\ Aceh\ Darussalam.avif);">
+                                <div class="inner place-name">
+                                    <p>Nangroe Aceh Darusalam</p>
+                                    <span>Banda Aceh</span>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="inner place-description">
+                                    <p>Terkenal dengan keindahan alamnya, seperti Masjid Raya Baiturrahman, Pantai
+                                        Sabang dan Taman Nasional
+                                        Gunung Leuser.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col mb-4" id="yourDivId2">
+                <a href="https://www.orami.co.id/magazine/wisata-bali?page=all" target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Bali.jpg);">
+                            <div class="inner place-name">
+                                <p>Bali</p>
+                                <span>Denpasar</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Terkenal dengan budaya yang hidup, kuil Hindu, dan pantai-pantai yang menakjubkan
+                                    yang menarik wisatawan dari seluruh dunia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col mb-4" id="yourDivId3">
+                <a href="https://www.detik.com/sumbagsel/wisata/d-6873430/20-rekomendasi-wisata-bangka-belitung-pulau-lengkuas-danau-kaolin"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Bangka\ Belitung.jpg);">
+                            <div class="inner place-name">
+                                <p>Bangka Belitung</p>
+                                <span>Pangkal Pinang</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p> Kaya akan produksi timah, provinsi ini memiliki pantai-pantai indah dan keberagaman
+                                    budaya.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col mb-4" id="yourDivId4">
+                <a href="https://www.liputan6.com/hot/read/5031256/41-tempat-wisata-di-banten-cocok-buat-liburan-bareng-keluarga"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Banten.jpg);">
+                            <div class="inner place-name">
+                                <p>Banten</p>
+                                <span>Serang</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Rumah bagi kota ramai Tangerang dan kota pelabuhan bersejarah Anyer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col mb-4" id="yourDivId5">
+                <a href="https://travel.kompas.com/read/2022/09/06/120900227/13-wisata-alam-bengkulu-ada-air-terjun-dan-pantai?page=all"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/bengkulu.jpeg);">
+                            <div class="inner place-name">
+                                <p>Bengkulu</p>
+                                <span>Bengkulu</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Menawarkan keindahan alam yang masih alami, termasuk gunung, pantai, dan air terjun
+                                    yang ikonik.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-1">
+            <div class="col mb-4" id="yourDivId6">
+                <a href="https://travel.kompas.com/read/2020/10/08/073900527/25-wisata-gorontalo-wisata-sejarah-hingga-bertemu-hiu-paus-?page=all"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Gorontalo.jpg);">
+                            <div class="inner place-name">
+                                <p>Gorontalo</p>
+                                <span>Gorontalo</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Terkenal dengan budaya lokal yang khas dan terumbu karang yang indah untuk para
+                                    penyelam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col mb-4" id="yourDivId7">
+                <a href="https://www.orami.co.id/magazine/wisata-jakarta?page=all" target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/DKI\ Jakarta..webp);">
+                            <div class="inner place-name">
+                                <p>DKI Jakarta</p>
+                                <span>Jakarta</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Ibukota yang ramai dengan campuran modernitas dan landmark sejarah.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col mb-4" id="yourDivId8">
+                <a href="https://www.kompasiana.com/kurnia20954/63cfe21788d103602a57cdf2/objek-wisata-di-merauke-papua-selatan-yang-terbaru-dan-wajib-dikunjungi"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Papua\ Selatan.jpg);">
+                            <div class="inner place-name">
+                                <p>Papua Selatan</p>
+                                <span>Marauke</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Menawarkan keindahan alam dan keanekaragaman budaya.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col mb-4" id="yourDivId9">
+                <a href="https://www.detik.com/jabar/wisata/d-6176779/25-tempat-wisata-di-jawa-barat-paling-terbaik"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Jawa\ Barat.jpg);">
+                            <div class="inner place-name">
+                                <p>Jawa Barat</p>
+                                <span>Bandung</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Warisan budaya yang beragam, dari wayang golek Sunda hingga kota Bandung yang penuh
+                                    warna.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col mb-4" id="yourDivId10">
+                <a href="https://www.tripadvisor.co.id/Attractions-g2301793-Activities-c57-Central_Java_Java.html"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Jawa\ Tengah.jpg);">
+                            <div class="inner place-name">
+                                <p>Jawa Tengah</p>
+                                <span>Semarang</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Pusat budaya Jawa, dengan landmark seperti Candi Borobudur dan Prambanan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-1">
+            <div class="col mb-4" id="yourDivId11">
+                <a href="https://www.tripadvisor.co.id/Attractions-g2301797-Activities-c57-East_Java_Java.html"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Jawa\ Timur.jpg);">
+                            <div class="inner place-name">
+                                <p>Jawa Timur</p>
+                                <span>Surabaya</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Terkenal dengan gunung berapi aktif, sejarah yang kaya, dan seni tradisional seperti
+                                    wayang kulit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col mb-4" id="yourDivId12">
+                <a href="https://www.tripadvisor.co.id/Attractions-g2301799-Activities-c57-West_Kalimantan_Kalimantan.html"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Kalimantan\ Barat.jpg);">
+                            <div class="inner place-name">
+                                <p>Kalimantan Barat</p>
+                                <span>Pontianak</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Menawarkan keberagaman budaya suku asli dan Monumen Khatulistiwa yang terkenal di
+                                    Pontianak.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col mb-4" id="yourDivId13">
+                <a href="https://www.tripadvisor.co.id/Attractions-g2301801-Activities-c57-South_Kalimantan_Kalimantan.html"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Kalimantan\ Selatan.jpg);">
+                            <div class="inner place-name">
+                                <p>Kalimantan Selatan</p>
+                                <span>Banjarbaru</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p> Terkenal dengan pasar terapung tradisional dan warisan budaya Banjar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col mb-4" id="yourDivId14">
+                <a href="https://www.tripadvisor.co.id/Attractions-g2301800-Activities-c57-Central_Kalimantan_Kalimantan.html"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Kalimantan\ Tengah.jpg);">
+                            <div class="inner place-name">
+                                <p>Kalimantan Tengah</p>
+                                <span>Palangkaraya</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Rumah bagi Orangutan Borneo dan berbagai suku Dayak.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col mb-4" id="yourDivId15">
+                <a href="https://www.tripadvisor.co.id/Attractions-g2301802-Activities-East_Kalimantan_Kalimantan.html"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Kalimantan\ Timur.jpg);">
+                            <div class="inner place-name">
+                                <p>Kalimantan Timur</p>
+                                <span>Samarinda</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Kaya akan sumber daya alam, termasuk minyak, batu bara, dan hutan hujan tropis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-1">
+            <div class="col mb-4" id="yourDivId16">
+                <a href="https://www.celebes.co/borneo/tempat-wisata-kalimantan-utara" target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Kalimantan\ Utara.jpg);">
+                            <div class="inner place-name">
+                                <p>Kalimantan Utara</p>
+                                <span>Tanjung Selor</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Provinsi termuda, didirikan pada tahun 2012, dikenal dengan ekosistem yang beragam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col mb-4" id="yourDivId17">
+                <a href="https://www.tripadvisor.co.id/Attractions-g317106-Activities-West_Papua.html" target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Papua\ Barat\ Daya.jpg);">
+                            <div class="inner place-name">
+                                <p>Papua Barat Daya</p>
+                                <span>Sorong</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Pusat ekowisata dengan keindahan bawah laut yang menakjubkan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col mb-4" id="yourDivId18">
+                <a href="https://www.gotravelly.com/blog/tempat-wisata-di-kepulauan-riau/" target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Kepulauan\ Riau.jpg);">
+                            <div class="inner place-name">
+                                <p>Kepulauan Riau</p>
+                                <span>Tanjung Pinang</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p> Surga pulau dengan pantai-pantai yang indah dan aktivitas air.
+                                    Lampung: Menawarkan campuran keindahan alam, dari Gunung Krakatau hingga Taman
+                                    Nasional Way Kambas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col mb-4" id="yourDivId19">
+                <a href="https://www.tripadvisor.co.id/Attractions-g800476-Activities-Maluku_Islands.html"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Maluku.jpg);">
+                            <div class="inner place-name">
+                                <p>Maluku</p>
+                                <span>Ambon</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Gugusan kepulauan dengan perpaduan budaya yang unik, terkenal dengan sejarah
+                                    perdagangan rempah-rempah.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col mb-4" id="yourDivId20">
+                <a href="https://www.tripadvisor.co.id/Attractions-g2301810-Activities-North_Maluku_Maluku_Islands.html"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Maluku\ Utara.jpg);">
+                            <div class="inner place-name">
+                                <p>Maluku Utara</p>
+                                <span>Sofifi</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Rumah bagi Benteng Oranye yang bersejarah dan Pulau Ternate yang indah.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-1">
+            <div class="col mb-4" id="yourDivId21">
+                <a href="https://www.tripadvisor.co.id/Attractions-g297732-Activities-West_Nusa_Tenggara.html"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Nusa\ Tenggara\ Barat.jpg);">
+                            <div class="inner place-name">
+                                <p>Nusa Tenggara Barat</p>
+                                <span>Mataram</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Terkenal dengan budaya Sasak dan Kepulauan Gili yang eksotis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col mb-4" id="yourDivId22">
+                <a href="https://www.senangrekreasi.com/wisata-nusa-tenggara-timur/" target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Nusa\ Tenggara\ Timur.jpg);">
+                            <div class="inner place-name">
+                                <p>Nusa Tenggara Timur</p>
+                                <span>Kupang</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Lanskap yang beragam, dari Taman Nasional Komodo hingga desa-desa tradisional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col mb-4" id="yourDivId23">
+                <a href="https://www.tripadvisor.co.id/Attractions-g297702-Activities-c57-Papua.html" target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Papua.jpg);">
+                            <div class="inner place-name">
+                                <p>Papua</p>
+                                <span>Jayapura</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p> Menawarkan keindahan alam yang luar biasa, termasuk Lembah Baliem dan keanekaragaman
+                                    hayati laut Raja Ampat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col mb-4" id="yourDivId24">
+                <a href="https://www.tripadvisor.co.id/Attractions-g317106-Activities-West_Papua.html" target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Papua\ Barat.jpg);">
+                            <div class="inner place-name">
+                                <p>Papua Barat</p>
+                                <span>Manokwari</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Terkenal dengan budaya asli yang unik dan Danau Sentani yang ikonik.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col mb-4" id="yourDivId25">
+                <a href="https://www.tripadvisor.co.id/Attractions-g2301793-Activities-c57-Central_Java_Java.html"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Jawa\ Tengah.jpg);">
+                            <div class="inner place-name">
+                                <p>Jawa Tengah</p>
+                                <span>Semarang</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Pusat budaya Jawa, dengan landmark seperti Candi Borobudur dan Prambanan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-1">
+            <div class="col mb-4" id="yourDivId26">
+                <a href="https://www.tripadvisor.co.id/Attractions-g3253675-Activities-c57-Riau_Province_Sumatra.html"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/riau.jpg);">
+                            <div class="inner place-name">
+                                <p>Riau</p>
+                                <span>Pekanbaru</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Pusat produksi minyak, banyak jejak peninggalan raja-raja Melayu.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col mb-4" id="yourDivId27">
+                <a href="https://www.senangrekreasi.com/tempat-wisata-sulawesi-barat/" target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Sulawesi\ Barat.jpg);">
+                            <div class="inner place-name">
+                                <p>Sulawesi Barat</p>
+                                <span>Mamuju</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Terkenal dengan budaya Bugis, rumah adat, dan pemandangan indah.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col mb-4" id="yourDivId28">
+                <a href="https://www.tripadvisor.co.id/Attractions-g297724-Activities-Jambi_Jambi_Province_Sumatra.html"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Jambi.png);">
+                            <div class="inner place-name">
+                                <p>Jambi</p>
+                                <span>Jambi</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p> Terkenal dengan tarian tradisionalnya, kebun binatang, dan situs-situs bersejarah.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col mb-4" id="yourDivId29">
+                <a href="https://www.tripadvisor.co.id/Attractions-g2301805-Activities-c57-South_Sulawesi_Sulawesi.html"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Sulawesi\ Selatan.jpg);">
+                            <div class="inner place-name">
+                                <p>Sulawesi Selatan</p>
+                                <span>Makassar</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Kaya akan warisan budaya, dengan upacara tradisional dan suku Toraja.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col mb-4" id="yourDivId30">
+                <a href="https://www.tripadvisor.co.id/Attractions-g2301804-Activities-c57-Central_Sulawesi_Sulawesi.html"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Sulawesi\ Tengah.webp);">
+                            <div class="inner place-name">
+                                <p>Sulawesi Tengah</p>
+                                <span>Palu</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Lanskap yang beragam, termasuk Taman Nasional Lore Lindu dan Kepulauan Togian.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-1">
+            <div class="col mb-4" id="yourDivId31">
+                <a href="https://www.tripadvisor.co.id/Attractions-g2301806-Activities-South_East_Sulawesi_Sulawesi.html"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Sulawesi\ Tenggara.webp);">
+                            <div class="inner place-name">
+                                <p>Sulawesi Tenggara</p>
+                                <span>Kendari</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Terkenal dengan Taman Nasional Wakatobi dan tenun sutra tradisional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col mb-4" id="yourDivId32">
+                <a href="https://www.tripadvisor.co.id/Attractions-g2301803-Activities-c57-North_Sulawesi_Sulawesi.html"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Sulawesi\ Utara.jpg);">
+                            <div class="inner place-name">
+                                <p>Sulawesi Utara</p>
+                                <span>Manado</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Menawarkan keindahan bawah laut yang menakjubkan di Taman Nasional Bunaken.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col mb-4" id="yourDivId33">
+                <a href="https://www.liputan6.com/hot/read/4993695/16-wisata-sumatera-barat-paling-populer-dan-ikonik-destinasi-alam-salah-satunya"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Sumatera\ Barat.webp);">
+                            <div class="inner place-name">
+                                <p>Sumatera Barat</p>
+                                <span>Padang</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p> Terkenal dengan budaya Minangkabau, arsitektur tradisional, dan rendang yang lezat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col mb-4" id="yourDivId34">
+                <a href="https://www.tripadvisor.co.id/Attractions-g2301786-Activities-South_Sumatra_Sumatra.html"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Sumatra\ Selatan.avif);">
+                            <div class="inner place-name">
+                                <p>Sumatera Selatan</p>
+                                <span>Palembang</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Rumah dari tarian tradisional Gandang Tasa dan kota ramai Palembang.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col mb-4" id="yourDivId35">
+                <a href="https://auto2000.co.id/berita-dan-tips/tempat-wisata-di-sumatera-utara-tips" target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Sumatera\ Utara.jpg);">
+                            <div class="inner place-name">
+                                <p>Sumatera Utara</p>
+                                <span>Medan</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Terkenal dengan Danau Toba, danau vulkanik terbesar di dunia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-1">
+            <div class="col mb-4" id="yourDivId36">
+                <a href="https://www.tokopedia.com/blog/tempat-wisata-jogja-tvl/?utm_source=google&utm_medium=organic"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Daerah\ Istimewa\ Yogyakarta.jpg);">
+                            <div class="inner place-name">
+                                <p>DI Yogyakarta</p>
+                                <span>Yogyakarta</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Wilayah istimewa yang kaya akan warisan budaya Jawa, termasuk Istana Kraton dan seni
+                                    batik.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col mb-4" id="yourDivId37">
+                <a href="https://jurnalaceh.pikiran-rakyat.com/nasional/pr-1796692292/5-tempat-wisata-papua-tengah-yang-paling-berkesan-cocok-buat-healing"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/papua\ tengah.jpg);">
+                            <div class="inner place-name">
+                                <p>Papua Tengah</p>
+                                <span>Nabire</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p>Menawarkan keindahan alam yang memukau.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col mb-4" id="yourDivId38">
+                <a href="https://www.genmuslim.id/ragam/632965325/6-rekomendasi-wisata-terbaik-di-papua-pegunungan-indah-dan-menawan-kamu-wajib-datang-ke-sini"
+                    target="_blank">
+                    <div class="container">
+                        <div class="front" style="background-image: url(fig/Papua\ Pegunungan.jpg);">
+                            <div class="inner place-name">
+                                <p>Papua Pegunungan</p>
+                                <span>Jayawijaya</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner place-description">
+                                <p> Terkenal dengan dataran tinggi dan suku-suku yang unik.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer text-center mt-5 mb-0">
+            <!-- Konten Footer -->
+            <!-- Ikons Akun Sosial Media -->
+            <a href="#" class="social-icon" target="_blank">
+                <img src="fig/fb.png" alt="Facebook">
+            </a>
+
+            <a href="#" class="social-icon" target="_blank">
+                <img src="fig/ig.png" alt="Instagram">
+            </a>
+
+            <a href="#" class="social-icon" target="_blank">
+                <img src="fig/telegram.png" alt="Telegram">
+            </a>
+
+            <a href="#" class="social-icon" target="_blank">
+                <img src="fig/gmail.png" alt="Email">
+            </a>
+
+            <!-- Hak Cipta -->
+            <p>&copy; 2023 Zenith's Group</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="js/mager_id.js"></script>
+    <script src="js/event.js"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src='https://unpkg.com/splitting/dist/splitting.min.js'></script>
+    <script src="js/travel.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.692);
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar.scrolled {
+    backdrop-filter: blur(10px);
+    background-color: rgba(167, 167, 172, 0.446);
+}
+
+.dropdown-menu {
+    backdrop-filter: blur(10px);
+    background-color: white;
+}
+
+.dropdown-menu .dropdown-item {
+    color: black;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: white;
+    background-color: black;
+}
+
+
+.container {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    flex: 1;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.column:first-child img {
+    height: 100vh;
+}
+
+.column:last-child img {
+    height: 100vh;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.title-line {
+    flex: 1;
+    height: 1px;
+    background-color: #000;
+    /* Warna garis sesuai kebutuhan */
+    margin: 0 10px;
+}
+
+h2 {
+    margin: 0 10px;
+}
+
+/* Daftar Isi */
+.center {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 kolom dengan lebar yang sama */
+    gap: 20px;
+    /* Jarak antar kolom dan baris */
+}
+
+.center .box {
+    background: white;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    justify-content: center;
+}
+
+.center .box:hover {
+    cursor: pointer;
+    transform: translateY(-50px);
+}
+
+.center .box .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: circle(50% at 50% 50%);
+}
+
+
+.center .box .text h1 {
+    color: black;
+    font-size: 20pt;
+    font-family: monospace;
+}
+
+.center .box .text p {
+    font-size: 15pt;
+    font-family: sans-serif;
+}
+
+
+.center {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    min-height: 100vh;
+    transform: scale(0.8);
+}
+
+.center .box {
+    background: white;
+    width: 300px;
+    height: 500px;
+    margin: 0 10px;
+    transition: .5s;
+}
+
+.center .box .image {
+    flex: 1;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.center .box .image img {
+    width: 200px;
+    /* Atur lebar gambar */
+    height: 200px;
+    /* Atur tinggi gambar */
+    object-fit: cover;
+    clip-path: circle(50% at 50% 50%);
+}
+
+
+.center .box:hover {
+    transform: translateY(-50px);
+    border-radius: 20px;
+}
+/* Untuk layar dengan lebar kurang dari atau sama dengan 768px */
+@media (max-width: 768px) {
+    .center {
+        grid-template-columns: 1fr; /* Satu kolom */
+    }
+
+    .center .box {
+        width: 100%; /* Lebar penuh */
+        margin: 0; /* Tidak ada margin di sisi kanan dan kiri */
+    }
+}
+
+/* Untuk layar dengan lebar kurang dari atau sama dengan 576px */
+@media (max-width: 576px) {
+    .center {
+        grid-template-columns: 1fr; /* Satu kolom */
+    }
+
+    .center .box {
+        width: 100%; /* Lebar penuh */
+        margin: 0; /* Tidak ada margin di sisi kanan dan kiri */
+        transform: scale(0.8); /* Ukuran konten menjadi lebih kecil */
+    }
+}
+
+/* Fashion */
+.card.bg-danger {
+    color: white;
+    /* Warna teks pada card menjadi putih */
+}
+
+  
+/* Footer */
+.footer {
+    background: rgba(0, 0, 0, 0.692);
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+footer p {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+

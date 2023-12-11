@@ -1,0 +1,376 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(67, 167, 244, 0.692);
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar.scrolled {
+    backdrop-filter: blur(10px);
+    background-color: rgba(163, 177, 255, 0.446);
+}
+
+.dropdown-menu {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.dropdown-menu .dropdown-item {
+    color: #000;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.content {
+    height: 1000px;
+}
+
+.carousel-item img {
+    height: 90vh;
+    object-fit: cover;
+}
+
+.contentEvent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: min(900px, 100%);
+    z-index: 10;
+    flex-grow: 1;
+    margin-left: 120px;
+    transition: margin-left 0.3s ease;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(58, 53, 53, 0.5);
+    width: 70%;
+    padding: 5%;
+    font-size: 2rem;
+    max-width: 400px;
+    margin: auto;
+}
+
+.carousel-caption p {
+    font-size: 15pt;
+    padding: 3%;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        font-size: 2rem;
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .carousel-caption {
+        font-size: 2.5rem;
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousel-caption {
+        font-size: 3rem;
+        max-width: 600px;
+    }
+}
+
+/* Judul Konten */
+.container h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Gaya animasi running text */
+.running-text {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: runningText 15s linear infinite;
+}
+
+/* Keyframes untuk animasi running text */
+@keyframes runningText {
+    0% {
+        transform: translateX(100%);
+        /* Mulai dari posisi di luar kontainer (kanan) */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Selesai di posisi di luar kontainer (kiri) */
+    }
+}
+
+/* Gaya tambahan untuk konten atau elemen HTML lainnya */
+.container p {
+    font-size: 16px;
+}
+
+/* Travel Konten */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 50rem;
+}
+
+/* Aturan CSS umum untuk card */
+.container .col {
+    margin-bottom: 20px;
+}
+
+/* Media query untuk layar kecil */
+@media (max-width: 992px) {
+    .container .col {
+        width: 100%; /* Set ukuran card menjadi 100% lebar saat layar kecil */
+    }
+}
+
+@media (max-width: 992px) {
+    .row-cols-md-2 .col {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .row-cols-md-1 .col {
+        width: 100%;
+    }
+}
+
+.row-cols-md-2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20pt;
+}
+
+.row-cols-md-1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20pt;
+}
+
+.place-description p {
+    font-size: 15pt;
+}
+
+.container {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.front,
+.back {
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+    background-position: center;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1),
+        -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -webkit-backface-visibility: hidden;
+    text-align: center;
+    min-height: 280px;
+    box-shadow: 0 0 10px solid blue;
+    font-size: 1.5rem;
+    height: auto;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.back {
+    background: #cedce7;
+    background: -webkit-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+    background: -o-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+    background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+}
+
+.front:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    border-radius: 10px;
+    display: block;
+    opacity: .6;
+    background-color: #000;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+
+.container:hover .front,
+.container:hover .back {
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1),
+        -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.inner {
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+    perspective: inherit;
+    z-index: 2;
+}
+
+.container .back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.container .front {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.container:hover .back {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.container:hover .front {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.front .inner p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.front .inner p:after {
+    content: '';
+    width: 4rem;
+    height: 2px;
+    position: absolute;
+    background: #C6D4DF;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -.75rem;
+}
+
+.front .inner span {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+
+@media screen and (max-width: 64rem) {
+    .col {
+        width: calc(33.333333% - 2rem);
+    }
+}
+
+@media screen and (max-width: 48rem) {
+    .col {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media screen and (max-width: 32rem) {
+    .col {
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
+}
+
+.footer {
+    background: rgba(67, 167, 244, 0.692);
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon img {
+    width: 40px;
+    /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    height: 40px;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    /* Efek scaling pada hover */
+}
+
+footer p {
+    margin-top: 20px;
+    margin-bottom: 0;
+}

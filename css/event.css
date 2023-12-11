@@ -1,0 +1,310 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(206, 110, 21, 0.692);
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar.scrolled {
+    backdrop-filter: blur(10px);
+    background-color: rgba(206, 110, 21, 0.692);
+}
+
+.dropdown-menu {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.dropdown-menu .dropdown-item {
+    color: #000;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: #fff;
+    background-color: rgba(206, 110, 21, 0.692);
+}
+
+.content {
+    height: 1000px;
+}
+
+.carousel-item img {
+    height: 90vh;
+    object-fit: cover;
+}
+
+.contentEvent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: min(900px, 100%);
+    z-index: 10;
+    flex-grow: 1;
+    margin-left: 120px;
+    transition: margin-left 0.3s ease;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(58, 53, 53, 0.5);
+    width: 70%;
+    padding: 5%;
+    font-size: 2rem;
+}
+
+.carousel-caption p {
+    font-size: 15pt;
+    padding: 3%;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .carousel-caption {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousel-caption {
+        font-size: 3rem;
+    }
+}
+
+.container h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Gaya animasi running text */
+.running-text {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: runningText 15s linear infinite;
+}
+
+.bgText {
+    background-color: rgba(206, 110, 21, 0.692);
+}
+
+/* Keyframes untuk animasi running text */
+@keyframes runningText {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.container p {
+    font-size: 16px;
+}
+
+.footer {
+    background: rgba(206, 110, 21, 0.692);
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+footer p {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+/*Style untuk card*/
+.bg {
+    margin-top: 50px;
+}
+
+.cat h3 {
+    font-size: 35px;
+}
+
+.container {
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    /* Atau gunakan padding-bottom: 20px; */
+}
+
+.container .card {
+    position: relative;
+    cursor: pointer;
+    border: none;
+}
+
+.container .card .face {
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+    border: none;
+    overflow: hidden;
+}
+
+.container .card .face.face1 {
+    position: relative;
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+    border: none;
+}
+
+.container .card:hover .face.face1 {
+    background: #68665d;
+    transform: translateY(0);
+    z-index: 2;
+}
+
+.container .card .face.face1 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.2;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.container .card:hover .face.face1 .content {
+    opacity: 1;
+}
+
+.container .card .face.face1 .content img {
+    max-width: 100%;
+    max-height: 150px;
+    /* Sesuaikan tinggi yang diinginkan */
+    object-fit: cover;
+    margin-top: 20px;
+    /* Jarak antara gambar dan teks */
+    margin-bottom: 10px;
+    /* Jarak antara gambar dan batas bawah card */
+}
+
+.container .card .face.face1 .content h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding: 0;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.container .card .face.face2 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+    z-index: 1;
+}
+
+.container .card:hover .face.face2 {
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p {
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face2 .content a {
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face2 .content a:hover {
+    background: #333;
+    color: #fff;
+}
+
+.container .card:hover {
+    height: 400px;
+}
+
+.container .card {
+    transition: height 0.5s;
+}
+
+/* Tambahkan media query untuk layar berukuran kecil (misalnya, ponsel) */
+@media (max-width: 576px) {
+    .container {
+        flex-direction: column;
+        /* Tampilkan card dalam satu kolom pada layar kecil */
+        align-items: center;
+        /* Pusatkan card */
+        width: 100%;
+        /* Lebar card 100% pada layar kecil */
+    }
+
+    .container .card {
+        width: 100%;
+        /* Lebar card 100% pada layar kecil */
+        margin-bottom: 20px;
+        /* Tambahkan ruang antara card pada layar kecil */
+    }
+
+    .container .card:hover {
+        height: 400px;
+        /* Sesuaikan tinggi card ketika dihover pada layar kecil */
+        margin-bottom: 20px;
+        /* Tambahkan jarak antara card ketika dihover pada layar kecil */
+    }
+}
+

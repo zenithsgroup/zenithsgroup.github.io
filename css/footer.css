@@ -1,0 +1,30 @@
+.footer {
+    background: #222;
+    /* Ubah warna background sesuai kebutuhan */
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+    /* Atur margin-top menjadi auto untuk menempatkannya di bagian bawah */
+}
+
+.social-icon {
+    display: inline-block;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon img {
+    width: 40px;
+    /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    height: 40px;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    /* Efek scaling pada hover */
+}
+
+footer p {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
